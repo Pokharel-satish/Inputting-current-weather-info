@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Data Form</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>Enter Weather Data</h1>
+    <form action="/submit" method="post">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" name="temperature" required><br><br>
+        
+        <label for="humidity">Humidity:</label>
+        <input type="text" id="humidity" name="humidity" required><br><br>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Data Result</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>Weather Data Submitted</h1>
+    <p>City: <span th:text="${weatherData.city}"></span></p>
+    <p>Temperature: <span th:text="${weatherData.temperature}"></span></p>
+    <p>Humidity: <span th:text="${weatherData.humidity}"></span></p>
+    <p>Description: <span th:text="${weatherData.description}"></span></p>
+</body>
+</html>
